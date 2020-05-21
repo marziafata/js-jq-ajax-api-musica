@@ -15,7 +15,7 @@ $.ajax({
 
         // Ciclare quindi i dischi e ottenuti...
         for (var i = 0; i < dischi.length; i++) {
-            var disco = dischi[i];
+            var disco = dischi[i]; //disco contiene già tutte le proprietà che mi servono, quindi potrei dare in pasto al template già direttamente disco, ma il metodo scritto di seguito è più stabile.
 
             // imposto le proprietà dell'oggetto context e le compilo con le proprietà recuperate da ogni disco
             var context = {
